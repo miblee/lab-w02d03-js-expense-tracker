@@ -4,16 +4,16 @@ You've been tasked with building an Expense tracker for a client.
 
 Their requirements are as follows:
 
-"I want to keep a running tally of all my expensives."
+"I want to keep a running tally of all my expenses."
 
 ## MVP
 
 When a user visits the site...
     they should see... 
+    - the text "Expense Report"
     - an input field to enter an amount
     - an input field to enter an expense name 
     - a button that says "Add expense"
-    - the text "Expenses"
     - the text "Total Expenses: 0"
 
 When a user enters an amount and a name for the expense...
@@ -22,11 +22,15 @@ When a user enters an amount and a name for the expense...
     - the name and amount of the expense should be added under "Expenses"
     - The text "Current Expenses: 0" should increase by the amount added
 
+![](assets/asset1.png?raw=true)
+
 ### Feature Request!
 
 - [ ] The client would prefer the data be displayed as a [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table).
 
 "Can we have a table with 'Expense' and 'Amount' as headers?"
+
+![](assets/asset2.png?raw=true)
 
 ### Feature Request!
 
@@ -40,6 +44,8 @@ When a user adds an expense...
     - the "Current Expenses" total decrease by that expense amount
     they __shouldn't__ see
     - the expense they removed
+
+![](assets/asset3.png?raw=true)
 
 ### Feature Request!
 
