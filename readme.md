@@ -14,7 +14,7 @@ When a user visits the site...
     - an input field to enter an expense name 
     - a button that says "Add expense"
     - the text "Expenses"
-    - the text "Current Expenses: 0"
+    - the text "Total Expenses: 0"
 
 When a user enters an amount and a name for the expense...
     and clicks "Add expense"...
@@ -24,15 +24,21 @@ When a user enters an amount and a name for the expense...
 
 ### Feature Request!
 
+- [ ] The client would prefer the data be displayed as a [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table).
+
+"Can we have a table with 'Expense' and 'Amount' as headers?"
+
+### Feature Request!
+
 The client enjoys adding expenses, but they can't enter them perfectly every time
 
-"I'd like to be able to remove an expense and add it again. Can you put an X next to each added expense?"
+"I'd like to be able to remove an expense and add it again. Can you put a Delete button next to each added expense?"
 
-When a user enters an expense...
-    and clicks "X"...
+When a user adds an expense...
+    then clicks "Delete"...
     they should see...
     - the "Current Expenses" total decrease by that expense amount
-    they shouldn't see
+    they __shouldn't__ see
     - the expense they removed
 
 ### Feature Request!
@@ -40,9 +46,31 @@ When a user enters an expense...
 The client is enjoying adding and removing expenses but they'd like to
 see what all their big expenses are.
 
-"I'd like to be able to sort the expenses from highest to lowest value. Can we add a 'Sort' button?"
+"I'd like to be able to sort the expenses from highest to lowest value."
 
-When a user has added expenses and clicks "Sort"
+When a user has added expenses and clicks the "Amount" table header
     they should see
-    - expesnes in descending order with the highest amount first
+    - expenses rearranged in descending order with the highest amount first
     - and the lowest amount last
+
+### Feature Request!
+
+The client is enjoying sorting, but they'd like to sort from highest to lowest OR 
+from lowest to highest AND sort the expense name alphabetically.
+
+When a user has added some expenses and clicks the "Amount" table header...
+    - they should see the expenses rearranged in descending amount orders
+    - But!
+    - when they click "Amount" again...
+    - the expenses should be rearranged again, but from lowest to highest
+
+When a user clicks on the "Expense" table header...
+    - the expenses should be rearranged alphabetically from "A" to "Z"
+    - But!
+    - when they click "Expense" again
+    - the table should be sorted from "Z" to "A"
+
+# Resources
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+- https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Tables
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
