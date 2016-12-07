@@ -8,19 +8,18 @@ Their requirements are as follows:
 
 ## MVP
 
-When a user visits the site...
-    they should see... 
-    - the text "Expense Report"
-    - an input field to enter an amount
-    - an input field to enter an expense name 
-    - a button that says "Add expense"
-    - the text "Total Expenses: 0"
+When a user visits the site they should see... 
 
-When a user enters an amount and a name for the expense...
-    and clicks "Add expense"...
-    they should see...
-    - the name and amount of the expense should be added under "Expenses"
-    - The text "Current Expenses: 0" should increase by the amount added
+- the text "Expense Report"
+- an input field to enter an amount
+- an input field to enter an expense name 
+- a button that says "Add expense"
+- the text "Total Expenses: 0"
+
+When a user enters an amount and a name for the expense and clicks "Add expense"...
+
+- they should see the name and amount of the expense should be added under "Expenses"
+- the text "Current Expenses: 0" should increase by the amount added
 
 ![](assets/asset1.png?raw=true)
 
@@ -38,12 +37,10 @@ The client enjoys adding expenses, but they can't enter them perfectly every tim
 
 "I'd like to be able to remove an expense and add it again. Can you put a Delete button next to each added expense?"
 
-When a user adds an expense...
-    then clicks "Delete"...
-    they should see...
-    - the "Current Expenses" total decrease by that expense amount
-    they __shouldn't__ see
-    - the expense they removed
+When a user adds an expense then clicks "Delete"...
+
+- they should see the "Current Expenses" total decrease by that expense amount
+- they __shouldn't__ see the expense they removed
 
 ![](assets/asset3.png?raw=true)
 
@@ -55,9 +52,8 @@ see what all their big expenses are.
 "I'd like to be able to sort the expenses from highest to lowest value."
 
 When a user has added expenses and clicks the "Amount" table header
-    they should see
-    - expenses rearranged in descending order with the highest amount first
-    - and the lowest amount last
+
+- they should see expenses rearranged in descending order with the highest amount first and the lowest amount last
 
 ### Feature Request!
 
@@ -65,16 +61,16 @@ The client is enjoying sorting, but they'd like to sort from highest to lowest O
 from lowest to highest AND sort the expense name alphabetically.
 
 When a user has added some expenses and clicks the "Amount" table header...
-    - they should see the expenses rearranged in descending amount orders
-    - But!
-    - when they click "Amount" again...
-    - the expenses should be rearranged again, but from lowest to highest
+
+- they should see the expenses rearranged in descending amount orders
+- when they click "Amount" again...
+- the expenses should be rearranged again, but from lowest to highest
 
 When a user clicks on the "Expense" table header...
-    - the expenses should be rearranged alphabetically from "A" to "Z"
-    - But!
-    - when they click "Expense" again
-    - the table should be sorted from "Z" to "A"
+
+- the expenses should be rearranged alphabetically from "A" to "Z"
+- when they click "Expense" again
+- the table should be sorted from "Z" to "A"
 
 # Resources
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
