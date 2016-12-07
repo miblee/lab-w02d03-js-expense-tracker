@@ -21,7 +21,7 @@ When a user enters an amount and a name for the expense and clicks "Add expense"
 - they should see the name and amount of the expense should be added under "Expenses"
 - the text "Current Expenses: 0" should increase by the amount added
 
-![](assets/asset1.png?raw=true)
+![](assets/asset2.png?raw=true)
 
 ### Feature Request!
 
@@ -29,7 +29,7 @@ When a user enters an amount and a name for the expense and clicks "Add expense"
 
 "Can we have a table with 'Expense' and 'Amount' as headers?"
 
-![](assets/asset2.png?raw=true)
+![](assets/asset1.png?raw=true)
 
 ### Feature Request!
 
