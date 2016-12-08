@@ -4,13 +4,36 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
   <title></title>
+  <style>
+    input[name="exp-name"]{
+      background: pink;
+    }
+
+  </style>
 </head>
 <body>
+  <form>
+    <input type="text" placeholder="name" name="exp-name" value="coffee">
+    <input type="text" placeholder="amount" name="exp-amount" value="2.00">
+    <button>Add Expense</button>
+  </form>
 <table>
-<tr>
-  <td>Name</td>
-  <td>Amount</td>
-</tr>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Amount</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Coffee
+      </td>
+      <td>
+        2.00
+      </td>
+    </tr>
+  </tbody>
 </table>
 <script type="text/javascript" src="main.js"></script>
 </body>
