@@ -4,13 +4,23 @@ var tbody = document.querySelector('tbody');
 var btn = document.querySelector('button');
 var expName = document.querySelector('input[name="exp-name"]');
 var expAmount = document.querySelector('input[name="exp-amount"]');
+// variables with '$' == DOM node
+var expTotal = document.querySelector('.total');
+var total = 0;
+var expenses = [];
 
 var handleClick = function(evt){
   evt.preventDefault();
   var expense = getValues();
+  if (expense.name == '' || expense.value == NaN){
+    return false;
+  }
+  expenses.push(expense);
+  updateTotal(expense.amount);
   var row = renderRow(expense.name, expense.amount);
   tbody.appendChild(row);
   clearInputs();
+
 }
 
 btn.addEventListener('click', handleClick);
@@ -30,14 +40,20 @@ var renderRow = function(name, amount) {
 }
 
 var getValues = function(){
-  var val = parseFloat(expAmount.value);
+  var val = parseFloat(expAmount.value) || 0;
   // target DOM for inputs and save the values
   // expName.value = expName.value;
   // expAmount.value = expAmount.value;
   return {
     name: expName.value,
-    amount: expAmount.value
+    amount: val
   };
+}
+
+var updateTotal = function(amount){
+
+  total += amount;
+  expTotal.textContent = total;
 }
 
 var clearInputs = function() {
